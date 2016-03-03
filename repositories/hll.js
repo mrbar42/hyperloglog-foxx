@@ -46,7 +46,6 @@ module.exports = Foxx.Repository.extend({
         }
         record._hll = JSON.stringify(hll.output());
 
-        console.log("size", record._hll.length);
         if (exists) {
             this.collection.update(key, record);
         }
