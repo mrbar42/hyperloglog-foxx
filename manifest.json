@@ -1,0 +1,32 @@
+{
+  "name": "hyperloglog",
+  "version": "0.0.2",
+  "description": "Adds HyperLogLog algorithm implementation",
+  "author": "mrbar42",
+  "thumbnail": "thumbnail.png",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrbar42/hyperloglog-foxx.git"
+  },
+  "engines": {
+    "arangodb": "^2.8.0"
+  },
+
+  "controllers": {
+    "/hll": "controllers/hll.js"
+  },
+
+  "scripts": {
+    "setup": "scripts/setup.js",
+    "teardown": "scripts/teardown.js"
+  },
+
+  "configuration": {
+    "defaultRegisterSize": {
+      "description": "HyperLogLog algorithm register size. affects precision and record size number{0,24}. default: 12",
+      "type": "number",
+      "default": 12
+    }
+  }
+}

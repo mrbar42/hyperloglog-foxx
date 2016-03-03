@@ -1,0 +1,26 @@
+*~
+# KDE directory preferences
+.directory
+.Trash-*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.grunt
+.lock-wscript
+
+build/Release
+node_modules
+.idea/
+
+vendor
+watcher.js
+package.json
