@@ -1,13 +1,16 @@
 # hyperloglog-foxx
 
-hyperloglog-foxx adds HyperLogLog algorithm implementation as arangodb foxx app.
+ **hyperloglog-foxx adds HyperLogLog algorithm implementation as arangodb foxx app.**
 
 hyperloglog algorithm - by [optimizely/hyperloglog](https://github.com/optimizely/hyperloglog)
+
 murmurhash3 hash algorithm by [karanlyons/murmurHash.js](http://github.com/karanlyons/murmurHash.js)
+
 
 the state of each instance is stored as serialized JSON (string) under `_hll` key.
 
 each instance weight is ~8kb at 12 registers with a mathematical error of ~1.6%.
+
  The actual errors you might experience are 0.5-3%.
 
 ## Quick Overview
